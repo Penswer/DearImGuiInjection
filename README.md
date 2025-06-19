@@ -2,6 +2,10 @@
 
 Inject [Dear ImGui](https://github.com/ocornut/imgui) into any process with C#.
 
+## Installation
+Unzip this zip file
+Place the DearImGuiInjection directory located in BepInEx/plugins into your BepInEx plugins directory for PEAK
+
 ## Usage
 
 The keybind for bringing up the cursor for interaction is by default the `Insert` key, which can be modified in the configuration file.
