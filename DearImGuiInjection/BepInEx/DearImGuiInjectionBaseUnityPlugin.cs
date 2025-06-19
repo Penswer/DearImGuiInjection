@@ -57,7 +57,7 @@ internal class DearImGuiInjectionBaseUnityPlugin : BaseUnityPlugin
 
     private static void IgnoreUIObjectsWhenImGuiCursorIsVisible(Action<object> orig, object self)
     {
-        if (DearImGuiInjection.IsCursorVisible)
+        if (DearImGuiInjection.IsCursorVisible && !DearImGuiInjection.AllowPassthroughInput)
         {
             return;
         }

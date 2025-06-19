@@ -23,6 +23,8 @@ public static class DearImGuiInjection
     public static string ImGuiIniConfigPath { get; private set; }
     private const string IniFileName = "DearImGuiInjection_imgui.ini";
 
+    public static bool AllowPassthroughInput = false;
+
     public static string AssetsFolderPath { get; private set; }
 
     /// <summary>
@@ -121,6 +123,17 @@ public static class DearImGuiInjection
             case RendererKind.D3D12:
                 ImGuiDX12.Dispose();
                 break;
+        }
+    }
+
+    public static void ToggleCursorActions(bool show)
+    {
+        if (show)
+        {
+            IO.ConfigFlags &= ~ImGuiConfigFlags.NoMouse;
+        } else
+        {
+            IO.ConfigFlags |= ImGuiConfigFlags.NoMouse;
         }
     }
 
