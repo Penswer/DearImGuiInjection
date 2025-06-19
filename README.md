@@ -3,7 +3,7 @@
 Inject [Dear ImGui](https://github.com/ocornut/imgui) into any process with C#.
 
 ## Installation
-Unzip this zip file
+Unzip this zip file \
 Place the DearImGuiInjection directory located in BepInEx/plugins into your BepInEx plugins directory for PEAK
 
 ## Usage
