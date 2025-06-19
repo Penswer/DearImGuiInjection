@@ -8,7 +8,7 @@ The keybind for bringing up the cursor for interaction is by default the `Insert
 
 ## Mod Developers
 
-Download this package and add a reference to `DearImguiSharp.dll` and `DearImGuiInjection.dll` in your C# project.
+Download this package and add a reference to `ImGui.NET.dll` and `DearImGuiInjection.dll` in your C# project.
 
 Above your `BaseUnityPlugin` class definition
 ```csharp
